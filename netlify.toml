@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/pomodorotimer"
+  status = 200

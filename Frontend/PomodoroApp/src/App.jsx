@@ -1,17 +1,17 @@
-import { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-// import Pomodoro from "../src/compoents/pomodoro";
 import Pomodorotimer from "../src/compoents/pomodorotimer";
+
 function App() {
   return (
     <div className="App">
-      <Router>
+      <Router basename={process.env.NODE_ENV === "production" ? "/subdirectory" : ""}>
         <Routes>
-          {/* <Route path="/pomodoro" element={<Pomodoro />} /> */}
           <Route path="/pomodorotimer" element={<Pomodorotimer />} />
         </Routes>
       </Router>
     </div>
   );
 }
+
 export default App;
