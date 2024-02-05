@@ -5,7 +5,7 @@ import Pomodorotimer from "../src/compoents/pomodorotimer";
 function App() {
   return (
     <div className="App">
-      <Router basename={process.env.NODE_ENV === "production" ? "/subdirectory" : ""}>
+      <Router basename={process.env.NODE_ENV === "production" ? "/" : ""}>
         <Routes>
           <Route path="/pomodorotimer" element={<Pomodorotimer />} />
         </Routes>
