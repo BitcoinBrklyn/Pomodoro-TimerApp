@@ -4,5 +4,5 @@
   status = 200
 
 [build]
-  publish = "pomodoro-timer-app/frontend/pomodoroapp/dist"
+publish = "dist"
 
