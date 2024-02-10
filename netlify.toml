@@ -1,4 +1,8 @@
 [[redirects]]
-from = "/*"
-to= "/index.html"
-status = 200
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build]
+  publish = "pomodoro-timer-app/frontend/pomodoroapp/dist"
+
